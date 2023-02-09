@@ -1,0 +1,29 @@
+CLASE,NOMBRE,PAIS,FECHA INICIAL,FECHA FINAL,COMBUSTIBLE,PESO NAVE(T),PESO MAX DE CARGA(T),EMPUJE(T),ALTURA(M),POTENCIA(CABALLOS),VELOCIDAD APROX(KM),CAPACIDAD PERSONAL,PLANETA,DISTANCIA TIERRA(KM),CELDA FOTOVOLTAICA,DESCRIPCION
+Vehiculo lanzaderas,Saturno V,EE.UU.,1967,1973,H(liq)+O(liq),2900,118,3500,100,3200000000,,,,,no,El más potente jamás construido
+Vehiculo lanzaderas,Energia,Rusia/Ucrania,1987,1988,petróleo refinado y oxígeno líquido,2400,100,3060,60,,,,,,no,Ponía en órbita al transbordador Buran
+Vehiculo lanzaderas,Delta IV,EE.UU.,2002,2023,H(liq)+O(liq),,,,,,,,,,no,Se utiliza en la actualidad para poner satélites y componentes de la EEI en órbita
+Vehiculo lanzaderas,Proton,Rusia/Ucrania,2001,2023,Queroseno+NO,,,,,,,,,,no,Se utiliza en la actualidad para poner satélites y componentes de la EEI en órbita
+Naves Espacial No Tripulada,ATV,Europa ESA/ASI,2008,2023,MMH+NO,,,1,,,12000,,,,si,"El más importante, y activo actualment sirve para abastecer limpiar y regular periódicamente la elevación de la EEI"
+Naves Espacial No Tripulada,Cassini Huygens,Europa ESA/ASI,1997,2023,MMH y tetróxido de nitrógeno,,,45,,,18000,,Saturno,,si,Se trata de un proyecto ejecutado conjuntamente por la NASA (EE.UU.) la ESA (Europa) y la ASI (Italia) que todavía sigue en marcha
+Naves Espacial No Tripulada,Pionero X,EE.UU. NASA,1972,2023,NO4+MMH,258,,26,,,,,Jupiter,,si,la primera de la historia en llegar a jupiter
+Naves Espacial No Tripulada,Pionero XI,EE.UU. NASA,1973,2023,NO4+MMH,258,,26,,,,,Jupiter,,si,se desplaza sin energía de forma inercial
+Naves Espacial No Tripulada,Galileo,EE.UU. NASA,1989,1995,NO4+MMH,,,1,,,,,Jupiter,,si,destruida en la actualidad
+Naves Espacial No Tripulada,Mariner IV,EE.UU. NASA,1965,2023,hidracina,,,22,,,,,Marte,,si,la primera que sobrevoló el planeta
+Naves Espacial No Tripulada,Mariner IX,EE.UU. NASA,1971,2060,,,,,,,,,Marte,,si,"la primera en orbitar con éxito el planeta, ahora permanece inactiva"
+Naves Espacial No Tripulada,Pionero de Marte,EE.UU. NASA,1996,2023,,,,,,,,,Marte,,si,la primera nave en llevar un todoterreno para explorar la superficie de marte
+Naves Espacial No Tripulada,Vikingo I,EE.UU. NASA,1975,2023,N(comp)+N2H4,,,135,,,,,Marte,,si,la primera sonda en tocar Marte de forma controlada y enviar imágenes de la superficie pero permanece en Marte sin energía
+Naves Espacial No Tripulada,Mariner X,EE.UU. NASA,1973,2023,N2H4,,,,,,,,Mercurio,,si,actualmente inactiva y Fue la primera sonda en enviar imágenes de Mercurio después de sobrevolar Venus
+Naves Espacial No Tripulada,Mensajero,EE.UU. NASA,2004,2023,66,1093,,,,,,,Mercurio,,si,entró en la órbita mercuriana el 18 de marzo de 2011 la primera en lograrlo.
+Naves Espacial No Tripulada,New Horizons,EE.UU. NASA,2006,2023,N2H4,,,3,,,56000,,Pluton,,si,destinada a explorar Plutón y sus lunas
+Naves Espacial No Tripulada,Viajero II,EE.UU. NASA,1977,,,,,,,,,,Urano y Neptuno,,si,flota activa en algún lugar del espacio exterior fue la primera en alcanzar urano y neptuno
+Naves Espacial No Tripulada,Helios I,EE.UU. NASA,2009,2023,,,,70,,,,,Sol,,si,objetivo de estudiar el sol
+Naves Espacial No Tripulada,Helios II,EE.UU. NASA,2009,2023,,,,70,,,,,Sol,,si,objetivo de estudiar el sol
+Naves Espacial No Tripulada,Venera IV,Rusia,1967,,,,,,,,,,Venus,,si,consiguió posarse suavemente sobre la superficie
+Naves Espacial No Tripulada,Venera IX,Rusia,1975,,,,,,,,,,Venus,,si,consiguió por primera vez captar imágenes de la superficie de venus
+Nave Espacial Tripulada,Vostok,Rusia,1960,1963,NO+Amina,,,,,,,,,,no,la primera de la historia en llevar un ser humano al espacio
+Nave Espacial Tripulada,Skylab,EE.UU.,1973,1979,,77,,,,,,3,,435,no,actualmente destruido
+Nave Espacial Tripulada,Salyut,Rusia,1982,1991,,20,,,,,249,3,,,no,actualmente destruido
+Nave Espacial Tripulada,Estacion Espacial Internacional,Internacional,1998,2023,,420,,,,,,7,,386,si,En este proyecto participan la NASA (EE.UU.) la Agencia Espacial Federal Rusa (Rusia) la Agencia Japonesa de Exploración Espacial (Japón) la CSA (Canadá) y la ESA (Europa)
+Nave Espacial Tripulada,Shenzou,China,1999,2023,N2O4+MMH,,,,,,,,,,no,
+Vehiculo lanzaderas,Ariane V,Europa,1996,2023,Solido+N(liq)+O(liq),,,,,,,,,,no,
+Vehiculo lanzaderas,H IIA,Japon,2001,2023,Solido+N(liq)+O(liq),,,,,,,,,,no,

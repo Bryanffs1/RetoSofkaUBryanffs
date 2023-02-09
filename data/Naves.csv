@@ -1,0 +1,29 @@
+CLASE,NOMBRE,PAIS,FECHA INICIAL,FECHA FINAL,COMBUSTIBLE,PESO NAVE(T),PESO MAX DE CARGA(T),EMPUJE(T),ALTURA(M),POTENCIA(CABALLOS),VELOCIDAD APROX(KM),CAPACIDAD PERSONAL,PLANETA,DISTANCIA TIERRA(KM),CELDA FOTOVOLTAICA,DESCRIPCION
+Vehiculo lanzadera,Saturno V,EE.UU.,1967,1973.0,H(liq)+O(liq),2900.0,118.0,3500.0,100.0,3200000000.0,,,,,no,El más potente jamás construido
+Vehiculo lanzadera,Energia,Rusia/Ucrania,1987,1988.0,petróleo refinado y oxígeno líquido,2400.0,100.0,3060.0,60.0,,,,,,no,Ponía en órbita al transbordador Buran
+Vehiculo lanzadera,Delta IV,EE.UU.,2002,2023.0,H(liq)+O(liq),,,,,,,,,,no,Se utiliza en la actualidad para poner satélites y componentes de la EEI en órbita
+Vehiculo lanzadera,Proton,Rusia/Ucrania,2001,2023.0,Queroseno+NO,,,,,,,,,,no,Se utiliza en la actualidad para poner satélites y componentes de la EEI en órbita
+Nave Espacial No Tripulada,ATV,Europa ESA/ASI,2008,2023.0,MMH+NO,,,1.0,,,12000.0,,,,si,"El más importante, y activo actualment sirve para abastecer limpiar y regular periódicamente la elevación de la EEI"
+Nave Espacial No Tripulada,Cassini Huygens,Europa ESA/ASI,1997,2023.0,MMH y tetróxido de nitrógeno,,,45.0,,,18000.0,,Saturno,,si,Se trata de un proyecto ejecutado conjuntamente por la NASA (EE.UU.) la ESA (Europa) y la ASI (Italia) que todavía sigue en marcha
+Nave Espacial No Tripulada,Pionero X,EE.UU. NASA,1972,2023.0,NO4+MMH,258.0,,26.0,,,,,Jupiter,,si,la primera de la historia en llegar a jupiter
+Nave Espacial No Tripulada,Pionero XI,EE.UU. NASA,1973,2023.0,NO4+MMH,258.0,,26.0,,,,,Jupiter,,si,se desplaza sin energía de forma inercial
+Nave Espacial No Tripulada,Galileo,EE.UU. NASA,1989,1995.0,NO4+MMH,,,1.0,,,,,Jupiter,,si,destruida en la actualidad
+Nave Espacial No Tripulada,Mariner IV,EE.UU. NASA,1965,2023.0,hidracina,,,22.0,,,,,Marte,,si,la primera que sobrevoló el planeta
+Nave Espacial No Tripulada,Mariner IX,EE.UU. NASA,1971,2060.0,,,,,,,,,Marte,,si,"la primera en orbitar con éxito el planeta, ahora permanece inactiva"
+Nave Espacial No Tripulada,Pionero de Marte,EE.UU. NASA,1996,2023.0,,,,,,,,,Marte,,si,la primera nave en llevar un todoterreno para explorar la superficie de marte
+Nave Espacial No Tripulada,Vikingo I,EE.UU. NASA,1975,2023.0,N(comp)+N2H4,,,135.0,,,,,Marte,,si,la primera sonda en tocar Marte de forma controlada y enviar imágenes de la superficie pero permanece en Marte sin energía
+Nave Espacial No Tripulada,Mariner X,EE.UU. NASA,1973,2023.0,N2H4,,,,,,,,Mercurio,,si,actualmente inactiva y Fue la primera sonda en enviar imágenes de Mercurio después de sobrevolar Venus
+Nave Espacial No Tripulada,Mensajero,EE.UU. NASA,2004,2023.0,,1093.0,,66.0,,,,,Mercurio,,si,entró en la órbita mercuriana el 18 de marzo de 2011 la primera en lograrlo.
+Nave Espacial No Tripulada,New Horizons,EE.UU. NASA,2006,2023.0,N2H4,,,3.0,,,56000.0,,Pluton,,si,destinada a explorar Plutón y sus lunas
+Nave Espacial No Tripulada,Viajero II,EE.UU. NASA,1977,,,,,,,,,,Urano y Neptuno,,si,flota activa en algún lugar del espacio exterior fue la primera en alcanzar urano y neptuno
+Nave Espacial No Tripulada,Helios I,EE.UU. NASA,2009,2023.0,,,,70.0,,,,,Sol,,si,objetivo de estudiar el sol
+Nave Espacial No Tripulada,Helios II,EE.UU. NASA,2009,2023.0,,,,70.0,,,,,Sol,,si,objetivo de estudiar el sol
+Nave Espacial No Tripulada,Venera IV,Rusia,1967,,,,,,,,,,Venus,,si,consiguió posarse suavemente sobre la superficie
+Nave Espacial No Tripulada,Venera IX,Rusia,1975,,,,,,,,,,Venus,,si,consiguió por primera vez captar imágenes de la superficie de venus
+Nave Espacial Tripulada,Vostok,Rusia,1960,1963.0,NO+Amina,,,,,,,,,,no,la primera de la historia en llevar un ser humano al espacio
+Nave Espacial Tripulada,Skylab,EE.UU.,1973,1979.0,,77.0,,,,,,3.0,,435.0,no,actualmente destruido
+Nave Espacial Tripulada,Salyut,Rusia,1982,1991.0,,20.0,,,,,249.0,3.0,,,no,actualmente destruido
+Nave Espacial Tripulada,Estacion Espacial Internacional,Internacional,1998,2023.0,,420.0,,,,,,7.0,,386.0,si,En este proyecto participan la NASA (EE.UU.) la Agencia Espacial Federal Rusa (Rusia) la Agencia Japonesa de Exploración Espacial (Japón) la CSA (Canadá) y la ESA (Europa)
+Nave Espacial Tripulada,Shenzou,China,1999,2023.0,N2O4+MMH,,,,,,,,,,no,
+Vehiculo lanzadera,Ariane V,Europa,1996,2023.0,Solido+N(liq)+O(liq),,,,,,,,,,no,
+Vehiculo lanzadera,H IIA,Japon,2001,2023.0,Solido+N(liq)+O(liq),,,,,,,,,,no,
