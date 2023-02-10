@@ -1,0 +1,137 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<br>
+<div class ="Contenido wrapper">
+    <div class="contenido">   
+        <form method="POST">
+            
+            <h1 style="text-align:center">Registrar Nave en el inventario</h1>
+            <br>
+            <p>Seleccione la clase de la nave:</p>
+            
+            <label class="form-check-label form-check-inline" for="check1">
+            <input type="radio" class="form-check-input" id="check1" name="clase" value="Vehiculo lanzadera" required >Vehiculo lanzadera</label>
+
+            <label class="form-check-label form-check-inline" for="check2">
+            <input type="radio" class="form-check-input" id="check2" name="clase" value="Nave Espacial Tripulada">Nave Espacial Tripulada</label>
+
+            <label class="form-check-label form-check-inline" for="check3">
+            <input type="radio" class="form-check-input" id="check3" name="clase" value="Nave Espacial No Tripulada">Nave Espacial No Tripulada</label>
+            
+            <br><br>
+
+            <div class="form-element">
+                <label for="nombre" data-toggle="tooltip" data-placement="right">Nombre de la nave:</label><br>
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre" pattern="[A-Za-z0-9\s]+" title="Solo se admiten letras y numeros." required>
+            </div>
+            <div class="form-element">    
+                <label for="pais">Pais de la nave:</label><br>
+                <select name="pais" id="pais" required>
+                    <option value="">--Porfavor seleccione una opcion--</option>
+                    <option value="EE.UU.">EE.UU.</option>
+                    <option value="EE.UU. NASA">EE.UU. NASA</option>
+                    <option value="Rusia">Rusia</option>
+                    <option value="Rusia/Ucrania">Rusia/Ucrania</option>
+                    <option value="Europa">Europa</option>
+                    <option value="Europa ESA/ASI">Europa ESA/ASI</option>
+                    <option value="Japon">Japon</option>
+                    <option value="China">China</option>
+                    <option value="Internacional">Internacional</option>
+                </select>
+            </div>
+        
+            
+            <div class="form-element">
+                <label for="fecha_ini">Año inicial de la nave:</label><br>
+                <input type="number" id="fecha_ini" name="fecha_ini" placeholder="Año actividad inicial" required>
+            </div>
+            <div class="form-element">
+                <label for="fecha_fin">Año final de la nave:</label><br>
+                <input type="number" id="fecha_fin" name="fecha_fin" placeholder="Año actividad final">
+            </div>  
+            <div class="form-element">
+                <label for="combustible" data-toggle="tooltip" data-placement="right">Combustible de la nave:</label><br>
+                <input type="text" id="combustible" name="combustible" placeholder="Combustible">
+            </div>
+            <div class="form-element">         
+                <label for="peso_nave" data-toggle="tooltip" data-placement="right">Peso de la nave:</label><br>
+                <input type="number" id="peso_nave" name="peso_nave" placeholder="Peso">
+            </div>    
+            <div class="form-element">  
+                <label for="peso_max_carga" data-toggle="tooltip" data-placement="right">Peso de la carga de la nave:</label><br>
+                <input type="number" id="peso_max_carga" name="peso_max_carga" placeholder="Peso maximo carga">
+            </div> 
+            <div class="form-element">     
+                <label for="empuje" data-toggle="tooltip" data-placement="right">Empuje de la nave:</label><br>
+                <input type="number" id="empuje" name="empuje" placeholder="Empuje">
+            </div>
+            <div class="form-element">  
+                <label for="altura" data-toggle="tooltip" data-placement="right">Altura de la nave:</label><br>
+                <input type="number" id="altura" name="altura" placeholder="Altura">
+            </div>
+            <div class="form-element">  
+                <label for="potencia" data-toggle="tooltip" data-placement="right">Potencia de la nave:</label><br>
+                <input type="number" id="potencia" name="potencia" placeholder="Potencia">
+            </div>
+            <div class="form-element">  
+                <label for="velocidad_aprox" data-toggle="tooltip" data-placement="right">Velocidad aproximada:</label><br>
+                <input type="number" id="velocidad_aprox" name="velocidad_aprox" placeholder="Velocidad">
+            </div>
+            <div class="form-element">  
+                <label for="cap_persona" data-toggle="tooltip" data-placement="right">Capacidad de pasajeros:</label><br>
+                <input type="number" id="cap_persona" name="cap_persona" placeholder="Pasajeros">    
+            </div>
+            <div class="form-element">    
+                <label for="planeta">Planeta estudiado:</label><br>
+                <select name="planeta" id="planeta">
+                    <option value="">--Selecciona un planeta--</option>
+                    <option value="Saturno">Saturno</option>
+                    <option value="Jupiter">Jupiter</option>
+                    <option value="Marte">Marte</option>
+                    <option value="Mercurio">Mercurio</option>
+                    <option value="Pluton">Pluton</option>
+                    <option value="Urano y Neptuno">Urano y Neptuno</option>
+                    <option value="Sol">Sol</option>
+                    <option value="Venus">Venus</option>
+                </select>
+            </div>
+            <div class="form-element">  
+                <label for="dist_tierra" data-toggle="tooltip" data-placement="right">Distancia de la tierra:</label><br>
+                <input type="number" id="dist_tierra" name="dist_tierra" placeholder="Distancia">    
+            </div>
+            <div class="form-element"> 
+                <p>Tiene celda fotovoltaicas?</p> 
+                <label class="form-check-label form-check-inline" for="check_1">
+                <input type="radio" class="form-check-input" id="check_1" name="cel_fotovoltaicas" value="si" required >Si</label>
+    
+                <label class="form-check-label form-check-inline" for="check_2">
+                <input type="radio" class="form-check-input" id="check_2" name="cel_fotovoltaicas" value="no">No</label>   
+            </div>
+            <div class="form-element">  
+                <label for="descripcion" data-toggle="tooltip" data-placement="right">Descripcion de la nave:</label><br>
+                <textarea type="text" name="descripcion" id="descripcion" rows="2" cols="70" placeholder="Escribe aquí la descripcion sin comas:"></textarea>
+            </div>
+            
+            <br>
+            <input type="submit" value="REGISTRAR">
+        </form>
+
+        <h3 class="text-center p-4 my-1">{{info}}</h3>
+    </div>
+</div>
+<br>
+<div class ="tabla g">
+    <div class="contenido">
+        <h2>Naves en el sistema</h2>
+        <p>La siguiente tabla muestra la información de las Naves registradas en el sistema:</p>
+        {{ tabla_naves }}
+    </div>
+</div>
+  <script>
+    $(document).ready(function(){
+      $('[data-toggle="tooltip"]').tooltip();
+    });
+  </script>
+
+{% endblock content %}

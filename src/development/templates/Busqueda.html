@@ -1,0 +1,230 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<style>
+    input[type=text], select {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+</style>
+<br>
+<div class ="Contenido wrapper">
+    <div class="contenido"> 
+        <form method="POST">  
+          <h1 style="text-align:center">Busqueda de Naves</h1>
+
+          <div style="background: #bdf0fa; color: #0c92ac; font-weight: normal; padding: 15px; border: 2px solid #6bbccc; border-radius: 6px;">
+            <p style="font-weight: bold;">
+              - Búsqueda sencilla: Selecciones la clase de la nave que desea buscar y dale clic en el botón 'BUSCAR', así mismo puede hacer con el país de la nave.<br>
+              - Búsqueda avanzada: Ten en cuenta que debes escribir los datos sin tildes y el sistema diferencia mayúsculas y minúsculas, selecciona el tipo de información que deseas buscar y escribe que dato vas a buscar, puedes seleccionar hasta 3 opciones en orden para filtrar los datos además de seleccionar el operador (OR ó AND) con el que filtraras dicha búsqueda.
+            </p>
+            <p>
+              - Se pueden realizar búsqueda sencillas y avanzadas a la vez.<br>
+              - Se puede seleccionar los valores que desea ver de la nave para su búsqueda, esto lo puede hacer seleccionando todos los datos que desea ver en la opción 'Selecciona los datos que quieras ver de la nave:', si no selecciona ninguno, se establecen unos datos por defecto.<br>
+              - El filtro de clases puede seleccionar las clases que desee, si selecciona todas o no selecciona ninguna, se filtrara por todas las clases existentes.<br>
+              - El filtro de paices se puede seleccionar un pais para filtrar, si no se selecciona ninguno, se filtrará por todas los paises existentes.
+            </p>
+          </div>
+          <br>
+          <p>Selecciona los datos que quieras ver de la nave:</p>
+          
+          <input type="checkbox" id="data_tabla1" name="data_tabla1" value="CLASE">
+          <label for="data_tabla1">Clase</label> &nbsp; &nbsp;
+
+          <input type="checkbox" id="data_tabla2" name="data_tabla2" value="NOMBRE">
+          <label for="data_tabla2">Nombre</label> &nbsp; &nbsp;
+
+          <input type="checkbox" id="data_tabla3" name="data_tabla3" value="PAIS">
+          <label for="data_tabla3">Pais</label> &nbsp; &nbsp;
+
+          <input type="checkbox" id="data_tabla4" name="data_tabla4" value="FECHA INICIAL">
+          <label for="data_tabla4">Año inicial</label> &nbsp; &nbsp;
+
+          <input type="checkbox" id="data_tabla5" name="data_tabla5" value="FECHA FINAL">
+          <label for="data_tabla5">Año final</label> &nbsp; &nbsp;
+
+          <input type="checkbox" id="data_tabla6" name="data_tabla6" value="COMBUSTIBLE">
+          <label for="data_tabla6">Combustible</label> &nbsp; &nbsp;
+
+          <input type="checkbox" id="data_tabla7" name="data_tabla7" value="PESO NAVE(T)">
+          <label for="data_tabla7">Peso nave</label> &nbsp; &nbsp;
+
+          <input type="checkbox" id="data_tabla8" name="data_tabla8" value="PESO MAX DE CARGA(T)">
+          <label for="data_tabla8">Peso carga</label> &nbsp; &nbsp;
+
+          <input type="checkbox" id="data_tabla9" name="data_tabla9" value="EMPUJE(T)">
+          <label for="data_tabla9">Empuje</label> &nbsp; &nbsp;
+
+          <input type="checkbox" id="data_tabla10" name="data_tabla10" value="ALTURA(M)">
+          <label for="data_tabla10">Altura</label> &nbsp; &nbsp;
+
+          <input type="checkbox" id="data_tabla11" name="data_tabla11" value="POTENCIA(CABALLOS)">
+          <label for="data_tabla11">Potencia</label> &nbsp; &nbsp;
+
+          <input type="checkbox" id="data_tabla12" name="data_tabla12" value="VELOCIDAD APROX(KM)">
+          <label for="data_tabla12">Velocidad</label> &nbsp; &nbsp;
+
+          <input type="checkbox" id="data_tabla13" name="data_tabla13" value="CAPACIDAD PERSONAL">
+          <label for="data_tabla13">Personal</label> &nbsp; &nbsp;
+
+          <input type="checkbox" id="data_tabla14" name="data_tabla14" value="PLANETA">
+          <label for="data_tabla14">Planeta</label> &nbsp; &nbsp;
+
+          <input type="checkbox" id="data_tabla15" name="data_tabla15" value="DISTANCIA TIERRA(KM)">
+          <label for="data_tabla15">Distancia tierra</label> &nbsp; &nbsp;
+
+          <input type="checkbox" id="data_tabla16" name="data_tabla16" value="CELDA FOTOVOLTAICA">
+          <label for="data_tabla16">Celda fotovoltaica</label> &nbsp; &nbsp;
+
+          <input type="checkbox" id="data_tabla17" name="data_tabla17" value="DESCRIPCION">
+          <label for="data_tabla17">Descripcion</label><br><br>
+
+          <p>Selecciona las clases que deseas filtrar:</p>
+          &nbsp;&nbsp;&nbsp;
+          <input type="checkbox" id="vehicle1" name="vehicle1" value="Vehiculo lanzadera">
+          <label for="vehicle1">Vehiculo lanzadera</label> &nbsp; &nbsp;
+          <input type="checkbox" id="vehicle2" name="vehicle2" value="Nave Espacial Tripulada">
+          <label for="vehicle2">Nave Espacial Tripulada</label> &nbsp; &nbsp;
+          <input type="checkbox" id="vehicle3" name="vehicle3" value="Nave Espacial No Tripulada">
+          <label for="vehicle3">Nave Espacial No Tripulada</label><br><br>
+
+              
+          <label for="pais">Selecciona el pais que deseas filtrar:</label><br>
+          <select name="pais" id="pais">
+              <option value="">--Selecciona un pais--</option>
+              <option value="EE.UU.">EE.UU.</option>
+              <option value="EE.UU. NASA">EE.UU. NASA</option>
+              <option value="Rusia">Rusia</option>
+              <option value="Rusia/Ucrania">Rusia/Ucrania</option>
+              <option value="Europa">Europa</option>
+              <option value="Europa ESA/ASI">Europa ESA/ASI</option>
+              <option value="Japon">Japon</option>
+              <option value="China">China</option>
+              <option value="Internacional">Internacional</option>
+          </select><br><br>
+        
+
+          <div class="form-element2">    
+            <label for="columna1">Tipo de información:</label><br>
+            <select name="columna1" id="columna1">
+                <option value="">--Seleccione una opcion--</option>
+                <option value="CLASE">Clase</option>
+                <option value="NOMBRE">Nombre</option>
+                <option value="PAIS">Pais</option>
+                <option value="FECHA INICIAL">Año inicio</option>
+                <option value="FECHA FINAL">Año final</option>
+                <option value="PESO NAVE(T)">Peso nave(T)</option>
+                <option value="PESO MAX DE CARGA(T)">Peso max carga(T)</option>
+                <option value="EMPUJE(T)">Empuje(T)</option>
+                <option value="ALTURA(M)">Altura(T)</option>
+                <option value="POTENCIA(CABALLOS)">Potencia(Caballos)</option>
+                <option value="VELOCIDAD APROX(KM)">Velocidad aprox(Km)</option>
+                <option value="CAPACIDAD PERSONAL">Personal</option>
+                <option value="PLANETA">Planeta</option>
+                <option value="DISTANCIA TIERRA(KM)">Distancia tierra(Km)</option>
+                <option value="CELDA FOTOVOLTAICA">Celdas fotovoltaicas(si ó no)</option>
+            </select>
+          </div>
+          <div class="form-element2">
+            <label for="dato_buscar1" data-toggle="tooltip" data-placement="right">Ingrese el dato especifico de la nave:</label><br>
+            <input type="text" id="dato_buscar1" name="dato_buscar1" placeholder="Dato">
+          </div>
+
+          <div class="form-element3">
+            <label class="form-check-label form-check-inline" for="check1">Seleccione el operador de la busqueda:&nbsp;&nbsp;&nbsp;
+            <input type="radio" class="form-check-input" id="check1" name="operador1" value="&">AND</label>
+            <label class="form-check-label form-check-inline" for="check2">
+            <input type="radio" class="form-check-input" id="check2" name="operador1" value="|">OR</label>
+          </div>
+
+          <div class="form-element2">    
+            <label for="columna2">Tipo de información 2:</label><br>
+            <select name="columna2" id="columna2">
+              <option value="">--Porfavor seleccione una opcion--</option>
+              <option value="CLASE">Clase</option>
+              <option value="NOMBRE">Nombre</option>              
+              <option value="PAIS">Pais</option>
+              <option value="FECHA INICIAL">Año inicio</option>
+              <option value="FECHA FINAL">Año final</option>
+              <option value="PESO NAVE(T)">Peso nave(T)</option>
+              <option value="PESO MAX DE CARGA(T)">Peso max carga(T)</option>
+              <option value="EMPUJE(T)">Empuje(T)</option>
+              <option value="ALTURA(M)">Altura(T)</option>
+              <option value="POTENCIA(CABALLOS)">Potencia(Caballos)</option>
+              <option value="VELOCIDAD APROX(KM)">Velocidad aprox(Km)</option>
+              <option value="CAPACIDAD PERSONAL">Personal</option>
+              <option value="PLANETA">Planeta</option>
+              <option value="DISTANCIA TIERRA(KM)">Distancia tierra(Km)</option>
+              <option value="CELDA FOTOVOLTAICA">Celdas fotovoltaicas(si ó no)</option>
+            </select>
+          </div>
+          <div class="form-element2">
+            <label for="dato_buscar2" data-toggle="tooltip" data-placement="right">Ingrese el dato 2 especifico de la nave:</label><br>
+            <input type="text" id="dato_buscar2" name="dato_buscar2" placeholder="Dato" pattern="[A-Za-z0-9\s./]+" title="Solo se admiten letras, numeros, espacios y signos como :'.' '/'.">
+          </div>
+
+          <div class="form-element3">
+            <label class="form-check-label form-check-inline" for="check3">Seleccione el operador de la busqueda:&nbsp;&nbsp;&nbsp;
+            <input type="radio" class="form-check-input" id="check3" name="operador2" value="&">AND</label>
+            <label class="form-check-label form-check-inline" for="check4">
+            <input type="radio" class="form-check-input" id="check4" name="operador2" value="|">OR</label>
+          </div>
+
+          <div class="form-element2">    
+            <label for="columna3">Tipo de información 3:</label><br>
+            <select name="columna3" id="columna3">
+              <option value="">--Porfavor seleccione una opcion--</option>
+              <option value="CLASE">Clase</option>
+              <option value="NOMBRE">Nombre</option>
+              <option value="PAIS">Pais</option>
+              <option value="FECHA INICIAL">Año inicio</option>
+              <option value="FECHA FINAL">Año final</option>
+              <option value="PESO NAVE(T)">Peso nave(T)</option>
+              <option value="PESO MAX DE CARGA(T)">Peso max carga(T)</option>
+              <option value="EMPUJE(T)">Empuje(T)</option>
+              <option value="ALTURA(M)">Altura(T)</option>
+              <option value="POTENCIA(CABALLOS)">Potencia(Caballos)</option>
+              <option value="VELOCIDAD APROX(KM)">Velocidad aprox(Km)</option>
+              <option value="CAPACIDAD PERSONAL">Personal</option>
+              <option value="PLANETA">Planeta</option>
+              <option value="DISTANCIA TIERRA(KM)">Distancia tierra(Km)</option>
+              <option value="CELDA FOTOVOLTAICA">Celdas fotovoltaicas(si ó no)</option>
+            </select>
+          </div>
+          <div class="form-element2">
+            <label for="dato_buscar3" data-toggle="tooltip" data-placement="right">Ingrese el dato 3 especifico de la nave:</label><br>
+            <input type="text" id="dato_buscar3" name="dato_buscar3" placeholder="Dato">
+          </div>
+
+          <input type="submit" value="BUSCAR">
+        </form>
+
+        <h3 class="text-center p-4 my-1">{{info}}</h3>
+        
+        {% if tabla_filtro %}
+          <h2>Tus naves buscadas</h2>
+          <p>La siguiente tabla muestra la información filtrada:</p>
+          {{tabla_filtro}}
+        {% else %}          
+        {% endif %}
+    </div>
+</div><br>
+<div class ="tabla g">
+  <div class="contenido">
+      <h2>Naves en el sistema</h2>
+      <p>La siguiente tabla muestra la información de las Naves registradas en el sistema:</p>
+      {{ tabla_naves }}
+  </div>
+</div>
+  <script>
+    $(document).ready(function(){
+      $('[data-toggle="tooltip"]').tooltip();
+    });
+  </script>
+
+{% endblock content %}
