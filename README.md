@@ -7,7 +7,7 @@ El reto se desarrolló en un entorno virtual con el fin de que, a la hora de rev
 pip install -r requirements.txt
 ```
 ## Python version
-El reto se desarrolló en python versión 3.9.13 en sistema operativo de Windows
+El reto se desarrolló en python versión 3.9.13 en sistema operativo de Windows y se programo con el editor de Visual Studio Code 
 
 ## Autor
 - [Bryan F. Fandiño] - (bryanfely@gmail.com)
